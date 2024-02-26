@@ -5,7 +5,7 @@ import 'package:new_corse_project/core/themes/app_strings.dart';
 import 'package:new_corse_project/core/themes/custom_text_style.dart';
 
 class GetStartesButton extends StatelessWidget {
-  const GetStartesButton({super.key, this.onPressed});
+  const GetStartesButton({super.key, required this.onPressed});
   final void Function()? onPressed;
 
   @override
