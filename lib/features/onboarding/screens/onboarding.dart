@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:new_corse_project/core/helpers/extenions.dart';
+import 'package:new_corse_project/core/routing/routes.dart';
 import 'package:new_corse_project/core/themes/app_strings.dart';
 import 'package:new_corse_project/core/themes/custom_text_style.dart';
 import 'package:new_corse_project/features/onboarding/widgets/doctor_image_and_text.dart';
@@ -29,12 +31,18 @@ class OnBoardingScreen extends StatelessWidget {
                     Text(
                       AppStrings.manageScheduleMedicalAppointmentsEasily,
                       textAlign: TextAlign.center,
-                      style: CustomTextStyle.font13grey400w,
+                      style: CustomTextStyle.font13greyRegular,
                     ),
                     SizedBox(
                       height: 30.h,
                     ),
-                    const GetStartesButton()
+                    GetStartesButton(
+                      onPressed: () {
+                        context.pushReplacementNamed(Routes.loginScreen);
+                        // Navigator.of(context).push(
+                        //     MaterialPageRoute(builder: (_) => LoginScreen()));
+                      },
+                    )
                   ],
                 ),
               )

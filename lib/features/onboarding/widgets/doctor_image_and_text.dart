@@ -18,7 +18,7 @@ class DoctorImageAndText extends StatelessWidget {
             colors: [Colors.white, Colors.white.withOpacity(0.0)],
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
-            stops: [0.18, 0.4],
+            stops: const [0.18, 0.4],
           )),
           child: Image.asset(Assets.assetsImagesOnboardingDoctor),
         ),
