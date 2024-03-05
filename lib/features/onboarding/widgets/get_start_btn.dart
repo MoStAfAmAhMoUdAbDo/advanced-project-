@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:new_corse_project/core/themes/app_colors.dart';
 import 'package:new_corse_project/core/themes/app_strings.dart';
 import 'package:new_corse_project/core/themes/custom_text_style.dart';
 
 class GetStartesButton extends StatelessWidget {
-  const GetStartesButton({super.key, this.onPressed});
+  const GetStartesButton({super.key, required this.onPressed});
   final void Function()? onPressed;
 
   @override
