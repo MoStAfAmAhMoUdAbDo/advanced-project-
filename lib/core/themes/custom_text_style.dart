@@ -20,6 +20,17 @@ class CustomTextStyle {
     fontWeight: FontWeightHelper.regular,
     color: AppColors.myGrey,
   );
+  static TextStyle font15DarkBlueMediun = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeightHelper.mediam,
+    color: AppColors.darckBlue,
+  );
+  static TextStyle font14BlueSemiBold = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: AppColors.myBlue,
+  );
+
   static TextStyle font24BlueBold = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeightHelper.bold,
