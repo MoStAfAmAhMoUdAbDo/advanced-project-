@@ -44,7 +44,7 @@ class SginUpBlocListener extends StatelessWidget {
           },
         );
       },
-      child: SizedBox.shrink(),
+      child: const SizedBox.shrink(),
     );
   }
 }
