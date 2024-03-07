@@ -6,11 +6,10 @@ import 'package:new_corse_project/core/themes/app_colors.dart';
 import 'package:new_corse_project/core/themes/app_strings.dart';
 import 'package:new_corse_project/core/themes/custom_text_style.dart';
 import 'package:new_corse_project/core/widgets/custom_button.dart';
-import 'package:new_corse_project/features/auth/data/models/login_request_body.dart';
-import 'package:new_corse_project/features/auth/logic/cubit/login_cubit.dart';
-import 'package:new_corse_project/features/auth/ui/widgets/already_have_account.dart';
-import 'package:new_corse_project/features/auth/ui/widgets/email_and_password.dart';
-import 'package:new_corse_project/features/auth/ui/widgets/terms_and_conditions.dart';
+import 'package:new_corse_project/features/auth/login/logic/cubit/login_cubit.dart';
+import 'package:new_corse_project/features/auth/login/ui/widgets/dont_have_account.dart';
+import 'package:new_corse_project/features/auth/login/ui/widgets/email_and_password.dart';
+import 'package:new_corse_project/features/auth/login/ui/widgets/terms_and_conditions.dart';
 
 import '../widgets/login_bloc_listener.dart';
 
@@ -60,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                     verticalSpacing(16),
                     const TermsAndConditionsText(),
                     verticalSpacing(60),
-                    const AlreadyHaveAccount(),
+                    const DontHaveAccount(),
                     const LoginBlocListener(),
                   ],
                 )
@@ -74,12 +73,13 @@ class LoginScreen extends StatelessWidget {
 
   void validateThenLogin(BuildContext context) {
     if (context.read<LoginCubit>().formStateKey.currentState!.validate()) {
-      context.read<LoginCubit>().emitLoadingState(
-            LoginRequestBody(
-              email: context.read<LoginCubit>().emailController.text,
-              password: context.read<LoginCubit>().passwordcontrller.text,
-            ),
-          );
+      context.read<LoginCubit>().emitLoadingState();
+      // context.read<LoginCubit>().emitLoadingState(
+      //       LoginRequestBody(
+      //         email: context.read<LoginCubit>().emailController.text,
+      //         password: context.read<LoginCubit>().passwordcontrller.text,
+      //       ),
+      //     );
     }
   }
 }

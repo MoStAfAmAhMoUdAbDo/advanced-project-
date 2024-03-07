@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:new_corse_project/core/helpers/app_regex.dart';
-import 'package:new_corse_project/features/auth/logic/cubit/login_cubit.dart';
-import 'package:new_corse_project/features/auth/ui/widgets/pasword_validations.dart';
+import 'package:new_corse_project/features/auth/login/logic/cubit/login_cubit.dart';
+import 'package:new_corse_project/features/auth/login/ui/widgets/pasword_validations.dart';
 
-import '../../../../core/helpers/spacing.dart';
-import '../../../../core/themes/app_strings.dart';
-import '../../../../core/widgets/custom_text_form_field.dart';
+import '../../../../../core/helpers/spacing.dart';
+import '../../../../../core/themes/app_strings.dart';
+import '../../../../../core/widgets/custom_text_form_field.dart';
 
 class EmailAndPasswordSection extends StatefulWidget {
   const EmailAndPasswordSection({super.key});

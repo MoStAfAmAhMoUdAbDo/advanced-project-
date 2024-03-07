@@ -9,7 +9,7 @@ class ErrorDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      icon: Icon(
+      icon: const Icon(
         Icons.error,
         color: Colors.red,
         size: 32,

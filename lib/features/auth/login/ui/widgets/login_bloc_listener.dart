@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:new_corse_project/core/helpers/extenions.dart';
 import 'package:new_corse_project/core/routing/routes.dart';
 import 'package:new_corse_project/core/themes/app_colors.dart';
-import 'package:new_corse_project/features/auth/logic/cubit/login_cubit.dart';
-import 'package:new_corse_project/features/auth/logic/cubit/login_state.dart';
-import 'package:new_corse_project/features/auth/ui/widgets/error_dialog.dart';
+import 'package:new_corse_project/features/auth/login/logic/cubit/login_cubit.dart';
+import 'package:new_corse_project/features/auth/login/logic/cubit/login_state.dart';
+import 'package:new_corse_project/core/widgets/error_dialog.dart';
 
 class LoginBlocListener extends StatelessWidget {
   const LoginBlocListener({super.key});
