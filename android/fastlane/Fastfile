@@ -8,10 +8,10 @@ platform :android do
     firebase_app_distribution(
       upload_timeout: 600,
       app: "1:941528876299:android:025b2ec3c8116437b98e0e",
-      firebase_cli_token: "1//03vOQau-2TW1_CgYIARAAGAMSNwF-L9IrI5gJrL8Kg_aTmA9lFvxmxczBBcnGfIBB5utuCKqKZEUmSXXMKo2itEjP_2xfzH-9Zo8",
+      firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
       android_artifact_type: "APK",
       android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
-      testers: "golden.mostafa010@gmail.com",
+      testers: "mosmahabd952@gmailcom",
       release_notes: "first firebase distribution in my app"
     )
   end
