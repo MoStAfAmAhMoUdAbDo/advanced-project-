@@ -8,8 +8,9 @@ class DioFActory {
     Duration timeOut = const Duration(seconds: 30);
     if (dio == null) {
       dio = Dio();
-      dio!.options.connectTimeout = timeOut;
-      dio!.options.receiveTimeout = timeOut;
+      dio!
+        ..options.connectTimeout = timeOut
+        ..options.receiveTimeout = timeOut;
       addDioInterceptors();
       return dio!;
     } else {

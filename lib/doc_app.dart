@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:new_corse_project/core/helpers/check_device_size.dart';
 import 'package:new_corse_project/core/routing/app_router.dart';
@@ -23,7 +22,7 @@ class DocApp extends StatelessWidget {
         ),
         minTextAdapt: true,
         child: MaterialApp(
-          builder: DevicePreview.appBuilder,
+          //builder: DevicePreview.appBuilder,
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primaryColor: AppColors.myBlue,
