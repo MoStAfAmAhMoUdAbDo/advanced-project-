@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_corse_project/core/helpers/check_device_size.dart';
 import 'package:new_corse_project/core/routing/app_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_corse_project/core/routing/routes.dart';
@@ -10,10 +11,18 @@ class DocApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    final height = screenSize.height;
+    final width = screenSize.width;
+    final bool isTablet = checkDeviceIsTablet(context);
     return ScreenUtilInit(
-        designSize: const Size(375, 812),
+        designSize: Size(
+          isTablet ? 400 : width,
+          isTablet ? 800 : height,
+        ),
         minTextAdapt: true,
         child: MaterialApp(
+          //builder: DevicePreview.appBuilder,
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primaryColor: AppColors.myBlue,

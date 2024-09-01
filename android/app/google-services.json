@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941528876299",
+    "project_id": "flutter-advanced-distribution",
+    "storage_bucket": "flutter-advanced-distribution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941528876299:android:025b2ec3c8116437b98e0e",
+        "android_client_info": {
+          "package_name": "com.example.new_corse_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYC79KPFvexhQwIcdUzWxUQl0YJcEtF9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

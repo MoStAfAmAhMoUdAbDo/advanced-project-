@@ -12,7 +12,7 @@ import 'package:new_corse_project/features/onboarding/screens/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onBordingScreen:
         return MaterialPageRoute(
@@ -36,13 +36,15 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
         );
-      default:
-        return MaterialPageRoute(
-            builder: (_) => Scaffold(
-                  body: Center(
-                    child: Text("No route defined for ${settings.name}"),
-                  ),
-                ));
+      // default:
+      //   //SystemNavigator.pop();
+      //   return MaterialPageRoute(
+      //       builder: (_) => Scaffold(
+      //             body: Center(
+      //               child: Text("No route defined for ${settings.name}"),
+      //             ),
+      //           ));
     }
+    return null;
   }
 }

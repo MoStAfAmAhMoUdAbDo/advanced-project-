@@ -7,6 +7,11 @@ import 'package:new_corse_project/doc_app.dart';
 void main() async {
   await ScreenUtil.ensureScreenSize();
   setUpGetIt();
+  // runApp(DevicePreview(
+  //   builder: (context) => DocApp(
+  //     appRouter: AppRouter(),
+  //   ),
+  // ));
   runApp(DocApp(
     appRouter: AppRouter(),
   ));
